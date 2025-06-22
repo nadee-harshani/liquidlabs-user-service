@@ -95,6 +95,17 @@ Used in ExternalUserService via HttpClient.
 | GET    | `/api/Users/{id}`          | Get a specific user by ID              |
 
 ---
+## API Key Protection
+
+This APIs are secured using an **API Key mechanism**. All clients must send a valid API key in the request headers to access protected endpoints.
+
+### Required Header
+
+Clients must include the following HTTP header with each request:
+```http
+X-Api-Key: userservice@apikey
+```
+---
 
 ## Testing the API
 - You can test the API using the following tools:
